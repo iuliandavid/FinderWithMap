@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		568BBC91B7F7A2840D9B3216 /* Pods_FinderWithMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2C3016EC8CF8F50431DA17 /* Pods_FinderWithMap.framework */; };
 		B8D0448F1F460453003BFE13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D0448E1F460453003BFE13 /* AppDelegate.swift */; };
 		B8D044911F460453003BFE13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D044901F460453003BFE13 /* ViewController.swift */; };
 		B8D044941F460453003BFE13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D044921F460453003BFE13 /* Main.storyboard */; };
 		B8D044961F460453003BFE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D044951F460453003BFE13 /* Assets.xcassets */; };
 		B8D044991F460453003BFE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D044971F460453003BFE13 /* LaunchScreen.storyboard */; };
+		B8D044A11F461994003BFE13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8D044A01F461990003BFE13 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73CF2378C90E3A221F6BB36E /* Pods-FinderWithMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinderWithMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinderWithMap/Pods-FinderWithMap.release.xcconfig"; sourceTree = "<group>"; };
+		8D2C3016EC8CF8F50431DA17 /* Pods_FinderWithMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinderWithMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C9A4B2C8A1D4A9219F3C7B /* Pods-FinderWithMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinderWithMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinderWithMap/Pods-FinderWithMap.debug.xcconfig"; sourceTree = "<group>"; };
 		B8D0448B1F460453003BFE13 /* FinderWithMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinderWithMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D0448E1F460453003BFE13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8D044901F460453003BFE13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		B8D044951F460453003BFE13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8D044981F460453003BFE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8D0449A1F460453003BFE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D044A01F461990003BFE13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568BBC91B7F7A2840D9B3216 /* Pods_FinderWithMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		116CB49F8FD2B3363F559193 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D2C3016EC8CF8F50431DA17 /* Pods_FinderWithMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B8D044821F460452003BFE13 = {
 			isa = PBXGroup;
 			children = (
 				B8D0448D1F460453003BFE13 /* FinderWithMap */,
 				B8D0448C1F460453003BFE13 /* Products */,
+				BD977619670BB157E914D645 /* Pods */,
+				116CB49F8FD2B3363F559193 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				B8D044951F460453003BFE13 /* Assets.xcassets */,
 				B8D044971F460453003BFE13 /* LaunchScreen.storyboard */,
 				B8D0449A1F460453003BFE13 /* Info.plist */,
+				B8D044A01F461990003BFE13 /* GoogleService-Info.plist */,
 			);
 			path = FinderWithMap;
+			sourceTree = "<group>";
+		};
+		BD977619670BB157E914D645 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4C9A4B2C8A1D4A9219F3C7B /* Pods-FinderWithMap.debug.xcconfig */,
+				73CF2378C90E3A221F6BB36E /* Pods-FinderWithMap.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8D0449D1F460453003BFE13 /* Build configuration list for PBXNativeTarget "FinderWithMap" */;
 			buildPhases = (
+				AFF348DB7412DEE74023D7EF /* [CP] Check Pods Manifest.lock */,
 				B8D044871F460453003BFE13 /* Sources */,
 				B8D044881F460453003BFE13 /* Frameworks */,
 				B8D044891F460453003BFE13 /* Resources */,
+				86982F90110AA8B500040B10 /* [CP] Embed Pods Frameworks */,
+				3D7564876514DF1501A3E7B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8D044991F460453003BFE13 /* LaunchScreen.storyboard in Resources */,
+				B8D044A11F461994003BFE13 /* GoogleService-Info.plist in Resources */,
 				B8D044961F460453003BFE13 /* Assets.xcassets in Resources */,
 				B8D044941F460453003BFE13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D7564876514DF1501A3E7B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinderWithMap/Pods-FinderWithMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86982F90110AA8B500040B10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinderWithMap/Pods-FinderWithMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF348DB7412DEE74023D7EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8D044871F460453003BFE13 /* Sources */ = {
@@ -271,6 +350,7 @@
 		};
 		B8D0449E1F460453003BFE13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C9A4B2C8A1D4A9219F3C7B /* Pods-FinderWithMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BQ9WNW24Z8;
@@ -285,6 +365,7 @@
 		};
 		B8D0449F1F460453003BFE13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73CF2378C90E3A221F6BB36E /* Pods-FinderWithMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BQ9WNW24Z8;

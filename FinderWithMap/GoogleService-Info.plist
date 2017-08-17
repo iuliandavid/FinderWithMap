@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>624373933622-792fckp3028ksod1ck2d0m6o6jtb1ocg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.624373933622-792fckp3028ksod1ck2d0m6o6jtb1ocg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDlC6aO4z3eeqGveQFq-BP0GEYJ4tlC3dM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>624373933622</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.id.FinderWithMap</string>
+	<key>PROJECT_ID</key>
+	<string>findwithmap</string>
+	<key>STORAGE_BUCKET</key>
+	<string>findwithmap.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:624373933622:ios:bf0cbce685fb4ee0</string>
+	<key>DATABASE_URL</key>
+	<string>https://findwithmap.firebaseio.com</string>
+</dict>
+</plist>
