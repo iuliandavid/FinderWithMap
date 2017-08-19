@@ -9,42 +9,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MapVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinderWithMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapVC" customModule="FinderWithMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8pV-g2-w74">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRc-df-qh5">
-                                <rect key="frame" x="0.0" y="582" width="65" height="65"/>
+                                <rect key="frame" x="0.0" y="581" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="bvz-cx-jx7"/>
                                     <constraint firstAttribute="width" constant="65" id="qv5-G9-ZlN"/>
                                 </constraints>
                                 <state key="normal" image="pokeball"/>
                                 <connections>
-                                    <action selector="find:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3S-LQ-PsZ"/>
+                                    <action selector="placeObject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmC-kD-MBm"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6O8-iE-Kgx">
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="74p-Dk-FOa"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HRc-df-qh5" secondAttribute="bottom" constant="20" id="6L5-vx-HXB"/>
+                            <constraint firstItem="6O8-iE-Kgx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="46D-ic-F5j"/>
                             <constraint firstItem="8pV-g2-w74" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9By-En-AWV"/>
+                            <constraint firstAttribute="bottom" secondItem="6O8-iE-Kgx" secondAttribute="bottom" id="9J8-6n-2hJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6O8-iE-Kgx" secondAttribute="trailing" id="Ecj-Bb-HUR"/>
                             <constraint firstItem="8pV-g2-w74" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KKg-Qs-c6N"/>
                             <constraint firstItem="HRc-df-qh5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ShS-aZ-fXZ"/>
+                            <constraint firstItem="8pV-g2-w74" firstAttribute="bottom" secondItem="6O8-iE-Kgx" secondAttribute="top" id="YXw-hG-JbT"/>
                             <constraint firstItem="8pV-g2-w74" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bCm-Qb-BGm"/>
-                            <constraint firstItem="8pV-g2-w74" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oKI-bK-g6f"/>
+                            <constraint firstItem="6O8-iE-Kgx" firstAttribute="top" secondItem="HRc-df-qh5" secondAttribute="bottom" constant="20" id="boG-Xq-woO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="8pV-g2-w74" id="Fbq-1T-sU6"/>
+                        <outlet property="pullUpView" destination="6O8-iE-Kgx" id="NEg-PG-2Dm"/>
+                        <outlet property="pullUpViewHeight" destination="74p-Dk-FOa" id="oHp-kr-q18"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
