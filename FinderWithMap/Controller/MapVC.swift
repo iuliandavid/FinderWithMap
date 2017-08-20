@@ -188,15 +188,45 @@ extension MapVC: MKMapViewDelegate {
     }
     
     //place an image insted of a red dot
+    //it will be called after each ``self.mapView.addAnnotation(anno)``
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         var annotationView: MKAnnotationView?
         if annotation.isKind(of: MKUserLocation.self) {
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "User")
             annotationView?.image = #imageLiteral(resourceName: "ash")
+        } else if let deqAnnotation = mapView.dequeueReusableAnnotationView(withIdentifier: Constants.photoAnnotation) {
+            annotationView = deqAnnotation
+            annotationView?.annotation = annotation
+        } else {
+            print(annotation.debugDescription ?? "no description")
+            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: Constants.photoAnnotation)
+            av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            annotationView = av
+
         }
+        
+        if  let annotationView = annotationView, let anno = annotation as? PhotoAnnotation {
+            annotationView.canShowCallout = true
+            annotationView.image =  UIImage(named: "\(anno.photoId)")
+            
+            //add button with map refference
+            let mapButton = UIButton()
+            mapButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+            mapButton.setImage(#imageLiteral(resourceName: "location-map-flat"), for: .normal)
+            annotationView.rightCalloutAccessoryView = mapButton
+            
+        }
+
         
         return annotationView
         
+    }
+    
+    func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+        
+        let location = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
+        
+        showSightingsOnMap(location: location)
     }
     
 }
