@@ -73,6 +73,7 @@ class PhotoCell: UICollectionViewCell {
     
     @objc private func handleImageTapped() {
         print("image tapped")
-        mapVC?.animateViewDown()
+        guard let photoId = model?.photoId else { return }
+        mapVC?.photoSelected(with: photoId)
     }
 }

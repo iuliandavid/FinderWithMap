@@ -11,7 +11,7 @@
 		B82A3D001F48C3300040A636 /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = B83AE1AD1F486FEE00FF7208 /* data.csv */; };
 		B82A3D021F48C6530040A636 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A3D011F48C6530040A636 /* Login.swift */; };
 		B82A3D041F48C6B80040A636 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A3D031F48C6B80040A636 /* Obfuscator.swift */; };
-		B82A3D071F48D9740040A636 /* PhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A3D061F48D9740040A636 /* PhotoCollectionView.swift */; };
+		B82A3D091F49792B0040A636 /* PhotoAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A3D081F49792B0040A636 /* PhotoAnnotation.swift */; };
 		B83AE1A01F48311000FF7208 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83AE19F1F48311000FF7208 /* Constants.swift */; };
 		B83AE1A31F48325E00FF7208 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83AE1A21F48325E00FF7208 /* PhotoCell.swift */; };
 		B83AE1A51F48663D00FF7208 /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83AE1A41F48663D00FF7208 /* CSVParser.swift */; };
@@ -31,7 +31,7 @@
 		B4C9A4B2C8A1D4A9219F3C7B /* Pods-FinderWithMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinderWithMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinderWithMap/Pods-FinderWithMap.debug.xcconfig"; sourceTree = "<group>"; };
 		B82A3D011F48C6530040A636 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		B82A3D031F48C6B80040A636 /* Obfuscator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
-		B82A3D061F48D9740040A636 /* PhotoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionView.swift; sourceTree = "<group>"; };
+		B82A3D081F49792B0040A636 /* PhotoAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAnnotation.swift; sourceTree = "<group>"; };
 		B83AE19F1F48311000FF7208 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B83AE1A21F48325E00FF7208 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		B83AE1A41F48663D00FF7208 /* CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B83AE1A21F48325E00FF7208 /* PhotoCell.swift */,
-				B82A3D061F48D9740040A636 /* PhotoCollectionView.swift */,
+				B82A3D081F49792B0040A636 /* PhotoAnnotation.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,11 +291,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B83AE1A51F48663D00FF7208 /* CSVParser.swift in Sources */,
-				B82A3D071F48D9740040A636 /* PhotoCollectionView.swift in Sources */,
 				B83AE1AB1F4866BF00FF7208 /* MyModel.swift in Sources */,
 				B82A3D041F48C6B80040A636 /* Obfuscator.swift in Sources */,
 				B83AE1A31F48325E00FF7208 /* PhotoCell.swift in Sources */,
 				B8D044911F460453003BFE13 /* MapVC.swift in Sources */,
+				B82A3D091F49792B0040A636 /* PhotoAnnotation.swift in Sources */,
 				B83AE1A81F48666200FF7208 /* DataService.swift in Sources */,
 				B8D0448F1F460453003BFE13 /* AppDelegate.swift in Sources */,
 				B83AE1A01F48311000FF7208 /* Constants.swift in Sources */,

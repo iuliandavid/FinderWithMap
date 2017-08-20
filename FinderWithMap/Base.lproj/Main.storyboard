@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRc-df-qh5">
-                                <rect key="frame" x="0.0" y="581" width="65" height="65"/>
+                                <rect key="frame" x="0.0" y="582" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="bvz-cx-jx7"/>
                                     <constraint firstAttribute="width" constant="65" id="qv5-G9-ZlN"/>
@@ -49,7 +49,7 @@
                             <constraint firstItem="HRc-df-qh5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ShS-aZ-fXZ"/>
                             <constraint firstItem="8pV-g2-w74" firstAttribute="bottom" secondItem="6O8-iE-Kgx" secondAttribute="top" id="YXw-hG-JbT"/>
                             <constraint firstItem="8pV-g2-w74" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bCm-Qb-BGm"/>
-                            <constraint firstItem="6O8-iE-Kgx" firstAttribute="top" secondItem="HRc-df-qh5" secondAttribute="bottom" constant="20" id="boG-Xq-woO"/>
+                            <constraint firstAttribute="bottom" secondItem="HRc-df-qh5" secondAttribute="bottom" constant="20" id="boG-Xq-woO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
