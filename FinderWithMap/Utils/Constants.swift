@@ -17,4 +17,5 @@ struct Constants {
     static let FIREBASE_KEY: [UInt8] = [122, 6, 12, 40, 11, 16, 0, 114, 41, 87, 45, 9, 82, 66, 26, 115, 22, 21, 34, 22, 8, 3, 20]
     
     static let photoAnnotation = "photoAnnotation"
+    static let pinAnnotation = "droppablePin"
 }
