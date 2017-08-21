@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinderWithMap/ViewController.swift"
-            timestampString = "524687441.652238"
+            timestampString = "524756004.21599"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "mapView(_:didUpdate:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinderWithMap/ViewController.swift"
-            timestampString = "524687441.652337"
+            timestampString = "524756004.216087"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "locationAuthStatus()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinderWithMap/ViewController.swift"
-            timestampString = "524687441.652414"
+            timestampString = "524756004.21616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "locationManager(_:didChangeAuthorization:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
